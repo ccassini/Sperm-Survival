@@ -2049,8 +2049,8 @@ export default function SpermGame() {
               {/* Subtle separator - reduced margin */}
               <div className="w-[85%] max-w-[400px] h-1 bg-gradient-to-r from-transparent via-pink-400 to-transparent my-1 rounded-full opacity-60"></div>
               
-              <div className="mt-4 mb-3 relative max-w-[280px] w-full mx-auto" style={{ height: 'min(180px, 28vh)', marginTop: '1.5rem' }}>
-                {/* Direction buttons in a cross layout - increased size */}
+              <div className="mt-4 mb-3 relative max-w-[280px] w-full mx-auto" style={{ height: 'min(180px, 28vh)', marginTop: '1.5rem', position: 'relative', top: '5%' }}>
+                {/* Direction buttons in a cross layout - increased size by 25% */}
                 <div className="absolute" style={{ top: 0, left: '50%', transform: 'translateX(-50%)' }}>
                   <button
                     onTouchStart={(e) => {
@@ -2063,11 +2063,11 @@ export default function SpermGame() {
                       e.stopPropagation();
                     }}
                     onMouseDown={() => handleButtonClick('up')}
-                    className="w-[58px] h-[58px] sm:w-[70px] sm:h-[70px] rounded-full bg-gradient-to-b from-pink-400 to-pink-600 text-white flex items-center justify-center text-2xl transform hover:scale-105 active:scale-95 shadow-lg border-3 border-pink-300 active:from-pink-600 active:to-pink-800 transition-all duration-100"
+                    className="w-[72px] h-[72px] sm:w-[88px] sm:h-[88px] rounded-full bg-gradient-to-b from-pink-400 to-pink-600 text-white flex items-center justify-center text-2xl transform hover:scale-105 active:scale-95 shadow-lg border-3 border-pink-300 active:from-pink-600 active:to-pink-800 transition-all duration-100"
                     style={{ touchAction: "manipulation", WebkitTapHighlightColor: "transparent", boxShadow: "0 4px 10px rgba(0,0,0,0.3), inset 0 -2px 5px rgba(0,0,0,0.2)" }}
                     aria-label="Move up"
                   >
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 sm:h-10 sm:w-10 drop-shadow-md" viewBox="0 0 24 24" fill="currentColor" strokeWidth="0.5" stroke="white">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 sm:h-12 sm:w-12 drop-shadow-md" viewBox="0 0 24 24" fill="currentColor" strokeWidth="0.5" stroke="white">
                       <path d="M12 5l-8 8h5v6h6v-6h5z" />
                     </svg>
                   </button>
@@ -2085,11 +2085,11 @@ export default function SpermGame() {
                       e.stopPropagation();
                     }}
                     onMouseDown={() => handleButtonClick('left')}
-                    className="w-[58px] h-[58px] sm:w-[70px] sm:h-[70px] rounded-full bg-gradient-to-b from-pink-400 to-pink-600 text-white flex items-center justify-center text-2xl transform hover:scale-105 active:scale-95 shadow-lg border-3 border-pink-300 active:from-pink-600 active:to-pink-800 transition-all duration-100"
+                    className="w-[72px] h-[72px] sm:w-[88px] sm:h-[88px] rounded-full bg-gradient-to-b from-pink-400 to-pink-600 text-white flex items-center justify-center text-2xl transform hover:scale-105 active:scale-95 shadow-lg border-3 border-pink-300 active:from-pink-600 active:to-pink-800 transition-all duration-100"
                     style={{ touchAction: "manipulation", WebkitTapHighlightColor: "transparent", boxShadow: "0 4px 10px rgba(0,0,0,0.3), inset 0 -2px 5px rgba(0,0,0,0.2)" }}
                     aria-label="Move left"
                   >
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 sm:h-10 sm:w-10 drop-shadow-md" viewBox="0 0 24 24" fill="currentColor" strokeWidth="0.5" stroke="white">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 sm:h-12 sm:w-12 drop-shadow-md" viewBox="0 0 24 24" fill="currentColor" strokeWidth="0.5" stroke="white">
                       <path d="M5 12l8-8v5h6v6h-6v5z" />
                     </svg>
                   </button>
@@ -2107,11 +2107,11 @@ export default function SpermGame() {
                       e.stopPropagation();
                     }}
                     onMouseDown={() => handleButtonClick('right')}
-                    className="w-[58px] h-[58px] sm:w-[70px] sm:h-[70px] rounded-full bg-gradient-to-b from-pink-400 to-pink-600 text-white flex items-center justify-center text-2xl transform hover:scale-105 active:scale-95 shadow-lg border-3 border-pink-300 active:from-pink-600 active:to-pink-800 transition-all duration-100"
+                    className="w-[72px] h-[72px] sm:w-[88px] sm:h-[88px] rounded-full bg-gradient-to-b from-pink-400 to-pink-600 text-white flex items-center justify-center text-2xl transform hover:scale-105 active:scale-95 shadow-lg border-3 border-pink-300 active:from-pink-600 active:to-pink-800 transition-all duration-100"
                     style={{ touchAction: "manipulation", WebkitTapHighlightColor: "transparent", boxShadow: "0 4px 10px rgba(0,0,0,0.3), inset 0 -2px 5px rgba(0,0,0,0.2)" }}
                     aria-label="Move right"
                   >
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 sm:h-10 sm:w-10 drop-shadow-md" viewBox="0 0 24 24" fill="currentColor" strokeWidth="0.5" stroke="white">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 sm:h-12 sm:w-12 drop-shadow-md" viewBox="0 0 24 24" fill="currentColor" strokeWidth="0.5" stroke="white">
                       <path d="M19 12l-8 8v-5h-6v-6h6v-5z" />
                     </svg>
                   </button>
@@ -2129,11 +2129,11 @@ export default function SpermGame() {
                       e.stopPropagation();
                     }}
                     onMouseDown={() => handleButtonClick('down')}
-                    className="w-[58px] h-[58px] sm:w-[70px] sm:h-[70px] rounded-full bg-gradient-to-b from-pink-400 to-pink-600 text-white flex items-center justify-center text-2xl transform hover:scale-105 active:scale-95 shadow-lg border-3 border-pink-300 active:from-pink-600 active:to-pink-800 transition-all duration-100"
+                    className="w-[72px] h-[72px] sm:w-[88px] sm:h-[88px] rounded-full bg-gradient-to-b from-pink-400 to-pink-600 text-white flex items-center justify-center text-2xl transform hover:scale-105 active:scale-95 shadow-lg border-3 border-pink-300 active:from-pink-600 active:to-pink-800 transition-all duration-100"
                     style={{ touchAction: "manipulation", WebkitTapHighlightColor: "transparent", boxShadow: "0 4px 10px rgba(0,0,0,0.3), inset 0 -2px 5px rgba(0,0,0,0.2)" }}
                     aria-label="Move down"
                   >
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 sm:h-10 sm:w-10 drop-shadow-md" viewBox="0 0 24 24" fill="currentColor" strokeWidth="0.5" stroke="white">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 sm:h-12 sm:w-12 drop-shadow-md" viewBox="0 0 24 24" fill="currentColor" strokeWidth="0.5" stroke="white">
                       <path d="M12 19l8-8h-5v-6h-6v6h-5z" />
                     </svg>
                   </button>
