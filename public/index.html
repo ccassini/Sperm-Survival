@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>Sperm Invaders Survival</title>
+  
+  <!-- Essential Open Graph Meta Tags -->
+  <meta property="og:title" content="Sperm Invaders Survival" />
+  <meta property="og:description" content="The most epic sperm survival game on Farcaster!" />
+  <meta property="og:image" content="https://spermgame.vercel.app/og-image.png" />
+  
+  <!-- Essential Farcaster Frame Meta Tags -->
+  <meta property="fc:frame" content="vNext" />
+  <meta property="fc:frame:image" content="https://spermgame.vercel.app/og-image.png" />
+  <meta property="fc:frame:button:1" content="Play Now" />
+  <meta property="fc:frame:post_url" content="https://spermgame.vercel.app/api/frames" />
+  
+  <!-- Farcaster Mini App Embed - Simple format -->
+  <meta property="fc:frame:embed" content="https://spermgame.vercel.app" />
+  
+  <!-- Cache busting script -->
+  <script>
+    // Add timestamp to image URLs to prevent caching issues
+    window.onload = function() {
+      var cacheBuster = new Date().getTime();
+      var ogImageTag = document.querySelector('meta[property="og:image"]');
+      var frameImageTag = document.querySelector('meta[property="fc:frame:image"]');
+      
+      if (ogImageTag) {
+        ogImageTag.setAttribute('content', 'https://spermgame.vercel.app/og-image.png?v=' + cacheBuster);
+      }
+      
+      if (frameImageTag) {
+        frameImageTag.setAttribute('content', 'https://spermgame.vercel.app/og-image.png?v=' + cacheBuster);
+      }
+    };
+  </script>
+  
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      overscroll-behavior: none;
+      touch-action: manipulation;
+      -webkit-user-select: none;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #6f42c1, #8a63d2);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    
+    .container {
+      max-width: 800px;
+      padding: 20px;
+    }
+    
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    
+    .btn {
+      display: inline-block;
+      background-color: #4ade80;
+      color: white;
+      padding: 12px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+      margin-bottom: 20px;
+    }
+    
+    .btn:hover {
+      background-color: #22c55e;
+      transform: translateY(-2px);
+    }
+    
+    .game-image {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+    
+    .game-area {
+      width: 100%;
+      max-width: 800px;
+      height: 600px;
+      border: none;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="/og-image.png" alt="Sperm Invaders Survival" class="game-image">
+    <h1>Sperm Invaders Survival</h1>
+    <p>Race to the finish in this exciting survival game!</p>
+    <a href="/" class="btn">Play Now</a>
+    
+    <iframe src="/" class="game-area"></iframe>
+  </div>
+</body>
+</html> 

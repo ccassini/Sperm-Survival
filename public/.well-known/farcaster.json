@@ -1,0 +1,18 @@
+{
+  "accountAssociation": {
+    "header": "eyJmaWQiOjMzMTU0MywidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweDQzZTg5NEY4MTIyN0E5MjdDYkM3QmYxYjMwQ0IzZDQxQWY5OEQyNUEifQ",
+    "payload": "eyJkb21haW4iOiJzcGVybWdhbWUudmVyY2VsLmFwcCJ9",
+    "signature": "MHhmMDU1NGEwNTg3Mjk5NDY0YjM4OTJmMjg1YTc3ODQ0YjNlN2VkNzNlOTlkMzk2YjNmNDdmNDg1NjQ5YjRkNWRkNjk4ODNjNzljNTk2ZjM5MzIwNzY4YzNiM2E4MjE3MTgxNjNlM2NhM2IxYzhiOGUxMmNhNjY0ZDIzYjNiZmY2MjFi"
+  },
+  "frame": {
+    "version": "1",
+    "name": "Example Frame",
+    "iconUrl": "https://spermgame.vercel.app/icon.png",
+    "homeUrl": "https://spermgame.vercel.app",
+    "imageUrl": "https://spermgame.vercel.app/image.png",
+    "buttonTitle": "Check this out",
+    "splashImageUrl": "https://spermgame.vercel.app/splash.png",
+    "splashBackgroundColor": "#eeccff",
+    "webhookUrl": "https://spermgame.vercel.app/api/webhook"
+  }
+} 

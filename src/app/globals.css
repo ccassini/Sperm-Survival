@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #6f42c1;
+    --foreground: #ededed;
+  }
+}
+
+html, body {
+  overscroll-behavior: none;  /* Prevent bounce/elastic scroll effect */
+  touch-action: manipulation; /* Improve mobile touch handling */
+  -webkit-user-select: none;  /* Prevent text selection on mobile */
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;  /* Remove tap highlight */
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {  
+  color: var(--foreground);  
+  background: linear-gradient(to bottom, #6f42c1, #8a63d2);  
+  font-family: 'Inter', Helvetica, Arial, sans-serif;  
+  margin: 0;  
+  padding: 0;  
+  min-height: 100vh;  
+  display: flex;  
+  align-items: flex-start;  
+  justify-content: center;  
+  padding-top: 5px;
+}
+
+* {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
+
+/* Essential SpermSurvival game styles */
+.sperm-head-image {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Fix black screen issue */
+main {  
+  min-height: 100vh;  
+  width: 100%;  
+  display: flex;  
+  align-items: flex-start;  
+  justify-content: center;  
+  position: fixed;  
+  top: 0;  
+  left: 0;  
+  right: 0;  
+  bottom: 0;  
+  overflow: hidden;  
+  padding-top: 5px;
+}
+
+/* Fix for game container */
+.game-container {
+  max-width: 100%;
+  max-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  touch-action: none; /* Prevents scrolling/zooming while playing */
+}
+
+/* Mini App animation when loading */
+.mini-app-loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #6f42c1, #8a63d2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.mini-app-loading img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.mini-app-loading p {
+  color: white;
+  font-size: 16px;
+}

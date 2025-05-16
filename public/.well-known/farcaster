@@ -1,0 +1,21 @@
+{
+  "accountAssociation": {
+    "header": "eyJmaWQiOjMzMTU0MywidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweDQzZTg5NEY4MTIyN0E5MjdDYkM3QmYxYjMwQ0IzZDQxQWY5OEQyNUEifQ",
+    "payload": "eyJkb21haW4iOiJzcGVybWdhbWUudmVyY2VsLmFwcCJ9",
+    "signature": "MHgwZTNjMDcwMjhkODk5NmZlZGFlOGYzODI2MWYwMDllNWU3MjI5ZjY5OWI2YmNmMzQ2MmQyODQ2YmZlMDhjMDc1MjdiOTAwMjk5YWRiNDQ1MzFiOWYzZGY1M2I1MTExZmVkMGVhM2RiNjRiZThmYzkwMDYyY2QzMjE3OTg2ODM1MWM="
+  },
+  "frame": {
+    "version": "1",
+    "name": "Sperm Invaders Survival",
+    "iconUrl": "https://spermgame.vercel.app/icon.png",
+    "homeUrl": "https://spermgame.vercel.app",
+    "imageUrl": "https://spermgame.vercel.app/og-image.png",
+    "buttonTitle": "Open",
+    "splashImageUrl": "https://spermgame.vercel.app/loading.gif",
+    "splashBackgroundColor": "#0a0818",
+    "description": "The most epic sperm survival game on Farcaster!",
+    "primaryCategory": "Games",
+    "tags": ["game", "arcade", "survival"],
+    "webhookUrl": "https://spermgame.vercel.app/api/webhook"
+  }
+} 

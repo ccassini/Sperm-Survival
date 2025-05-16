@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example Frame</title>
+  
+  <!-- Essential Open Graph Meta Tags -->
+  <meta property="og:title" content="Example Frame" />
+  <meta property="og:description" content="The most epic sperm survival game on Farcaster!" />
+  <meta property="og:image" content="https://spermgame.vercel.app/image.png" />
+  
+  <!-- Essential Farcaster Frame Meta Tags -->
+  <meta property="fc:frame" content="vNext" />
+  <meta property="fc:frame:image" content="https://spermgame.vercel.app/image.png" />
+  <meta property="fc:frame:button:1" content="Check this out" />
+  <meta property="fc:frame:button:1:action" content="post_redirect" />
+  <meta property="fc:frame:button:1:target" content="https://spermgame.vercel.app/mini-app" />
+  <meta property="fc:frame:post_url" content="https://spermgame.vercel.app/api/frames" />
+  
+  <!-- Farcaster Mini App Embed - JSON structure format -->
+  <meta property="fc:frame:embed" content='{"appId":"spermgame","url":"https://spermgame.vercel.app/mini-app","version":"1"}' />
+  
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #6f42c1, #8a63d2);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    .container {
+      max-width: 800px;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #eeccff;
+      color: black;
+      padding: 12px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #ddbfee;
+      transform: translateY(-2px);
+    }
+    .game-image {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="/image.png" alt="Example Frame" class="game-image">
+    <h1>Example Frame</h1>
+    <p>Race to the finish in this exciting game!</p>
+    <a href="https://spermgame.vercel.app" class="btn">Check this out</a>
+  </div>
+</body>
+</html> 
