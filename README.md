@@ -15,19 +15,14 @@ Sperm Survival is a Snake-like game with a biological twist, where you control a
 - **Wall-passing**: Navigate freely as your sperm can pass through screen edges
 - **Multiple characters**: Choose from a variety of unique characters with different visuals
 
-### Dual-Currency System
-- **SPERM Coins**: In-game currency earned through gameplay
-- **Bitcoin (BTC)**: Rare secondary currency found in special food items
-- **Currency exchange**: Trade BTC for SPERM coins at a rate of 1 BTC = 100 SPERM
-
 ### Character System
 - **Default character**: Neo is unlocked by default
 - **Unlockable characters**:
-  - Naruto (100 SPERM)
-  - Flash (200 SPERM)
-  - Elon (300 SPERM)
-  - Superman (400 SPERM)
-  - Trump (500 SPERM)
+  - Naruto 
+  - Flash 
+  - Elon 
+  - Superman 
+  - Trump 
 
 ### Egg System
 - Four different egg types with varying costs and rewards:
