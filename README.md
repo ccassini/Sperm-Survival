@@ -23,14 +23,6 @@ Sperm Survival is a Snake-like game with a biological twist, where you control a
   - Elon 
   - Superman 
   - Trump 
-
-### Egg System
-- Four different egg types with varying costs and rewards:
-  - **Bronze**: 5 SPERM cost, 1-10 SPERM reward or 0.000001 BTC (1% chance)
-  - **Silver**: 15 SPERM cost, 5-25 SPERM reward or 0.000005 BTC (3% chance)
-  - **Gold**: 30 SPERM cost, 20-50 SPERM reward or 0.00002 BTC (5% chance)
-  - **Diamond**: 50 SPERM cost, 50-100 SPERM reward or 0.0001 BTC (10% chance)
-
 ### Farcaster Integration
 - **Authentication**: Log in with your Farcaster account
 - **Casting**: Share your high scores directly to Farcaster
